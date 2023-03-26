@@ -1,8 +1,6 @@
 # CMake Examples For Beginners  
 It wasn't hard to find minimal CMakeLists.txt files, but very few seemed to include basic package integration, so for those looking for a gentle starting point regarding integrating C++ libraries such as Boost, Poco, or Qt with CMake you're welcome to use my files as reference. 
 
-* I use CMake_Fetch_Content which is my prefered way of integrating packages 
-
 ![cmake_logo_slider](https://user-images.githubusercontent.com/109105989/224587836-2565407c-60db-4f9c-b5fb-950f25e47eac.png)
 
 ![poco](https://user-images.githubusercontent.com/109105989/224587850-0ca4ea19-d305-47cd-9858-3b28a1a69d2f.png)
