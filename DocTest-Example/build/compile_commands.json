@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/Users/hayde/Desktop/Code/CMake/DocTest-Example/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/hayde/Desktop/Code/CMake/DocTest-Example/build/_deps/doctest-src -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -o CMakeFiles/DocTest-Example.dir/main.cpp.o -c /Users/hayde/Desktop/Code/CMake/DocTest-Example/main.cpp",
+  "file": "/Users/hayde/Desktop/Code/CMake/DocTest-Example/main.cpp",
+  "output": "CMakeFiles/DocTest-Example.dir/main.cpp.o"
+},
+{
+  "directory": "/Users/hayde/Desktop/Code/CMake/DocTest-Example/build/_deps/doctest-build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DDOCTEST_CONFIG_IMPLEMENT_WITH_MAIN -I/Users/hayde/Desktop/Code/CMake/DocTest-Example/build/_deps/doctest-src -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -o CMakeFiles/doctest_with_main.dir/doctest/parts/doctest.cpp.o -c /Users/hayde/Desktop/Code/CMake/DocTest-Example/build/_deps/doctest-src/doctest/parts/doctest.cpp",
+  "file": "/Users/hayde/Desktop/Code/CMake/DocTest-Example/build/_deps/doctest-src/doctest/parts/doctest.cpp",
+  "output": "_deps/doctest-build/CMakeFiles/doctest_with_main.dir/doctest/parts/doctest.cpp.o"
+}
+]
