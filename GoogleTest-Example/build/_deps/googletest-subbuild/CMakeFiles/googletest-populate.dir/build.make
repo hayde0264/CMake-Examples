@@ -82,9 +82,6 @@ CMakeFiles/googletest-populate-complete: googletest-populate-prefix/src/googlete
 	/opt/homebrew/Cellar/cmake/3.26.1/bin/cmake -E touch /Users/hayde/Desktop/Code/CMake/GoogleTest-Example/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate-complete
 	/opt/homebrew/Cellar/cmake/3.26.1/bin/cmake -E touch /Users/hayde/Desktop/Code/CMake/GoogleTest-Example/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done
 
-googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update:
-.PHONY : googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update
-
 googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build: googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/hayde/Desktop/Code/CMake/GoogleTest-Example/build/_deps/googletest-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "No build step for 'googletest-populate'"
 	cd /Users/hayde/Desktop/Code/CMake/GoogleTest-Example/build/_deps/googletest-build && /opt/homebrew/Cellar/cmake/3.26.1/bin/cmake -E echo_append
@@ -96,10 +93,13 @@ googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-con
 	cd /Users/hayde/Desktop/Code/CMake/GoogleTest-Example/build/_deps/googletest-build && /opt/homebrew/Cellar/cmake/3.26.1/bin/cmake -E echo_append
 	cd /Users/hayde/Desktop/Code/CMake/GoogleTest-Example/build/_deps/googletest-build && /opt/homebrew/Cellar/cmake/3.26.1/bin/cmake -E touch /Users/hayde/Desktop/Code/CMake/GoogleTest-Example/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure
 
-googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download: googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-gitinfo.txt
+googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download: googletest-populate-prefix/src/googletest-populate-stamp/download-googletest-populate.cmake
+googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download: googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-urlinfo.txt
 googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download: googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/hayde/Desktop/Code/CMake/GoogleTest-Example/build/_deps/googletest-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (git clone) for 'googletest-populate'"
-	cd /Users/hayde/Desktop/Code/CMake/GoogleTest-Example/build/_deps && /opt/homebrew/Cellar/cmake/3.26.1/bin/cmake -P /Users/hayde/Desktop/Code/CMake/GoogleTest-Example/build/_deps/googletest-subbuild/googletest-populate-prefix/tmp/googletest-populate-gitclone.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/hayde/Desktop/Code/CMake/GoogleTest-Example/build/_deps/googletest-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (download, verify and extract) for 'googletest-populate'"
+	cd /Users/hayde/Desktop/Code/CMake/GoogleTest-Example/build/_deps && /opt/homebrew/Cellar/cmake/3.26.1/bin/cmake -P /Users/hayde/Desktop/Code/CMake/GoogleTest-Example/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/download-googletest-populate.cmake
+	cd /Users/hayde/Desktop/Code/CMake/GoogleTest-Example/build/_deps && /opt/homebrew/Cellar/cmake/3.26.1/bin/cmake -P /Users/hayde/Desktop/Code/CMake/GoogleTest-Example/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/verify-googletest-populate.cmake
+	cd /Users/hayde/Desktop/Code/CMake/GoogleTest-Example/build/_deps && /opt/homebrew/Cellar/cmake/3.26.1/bin/cmake -P /Users/hayde/Desktop/Code/CMake/GoogleTest-Example/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/extract-googletest-populate.cmake
 	cd /Users/hayde/Desktop/Code/CMake/GoogleTest-Example/build/_deps && /opt/homebrew/Cellar/cmake/3.26.1/bin/cmake -E touch /Users/hayde/Desktop/Code/CMake/GoogleTest-Example/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download
 
 googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install: googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build
@@ -117,17 +117,15 @@ googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-pat
 	/opt/homebrew/Cellar/cmake/3.26.1/bin/cmake -E echo_append
 	/opt/homebrew/Cellar/cmake/3.26.1/bin/cmake -E touch /Users/hayde/Desktop/Code/CMake/GoogleTest-Example/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch
 
-googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update:
-.PHONY : googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update
-
 googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test: googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/hayde/Desktop/Code/CMake/GoogleTest-Example/build/_deps/googletest-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No test step for 'googletest-populate'"
 	cd /Users/hayde/Desktop/Code/CMake/GoogleTest-Example/build/_deps/googletest-build && /opt/homebrew/Cellar/cmake/3.26.1/bin/cmake -E echo_append
 	cd /Users/hayde/Desktop/Code/CMake/GoogleTest-Example/build/_deps/googletest-build && /opt/homebrew/Cellar/cmake/3.26.1/bin/cmake -E touch /Users/hayde/Desktop/Code/CMake/GoogleTest-Example/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test
 
 googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update: googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/hayde/Desktop/Code/CMake/GoogleTest-Example/build/_deps/googletest-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Performing update step for 'googletest-populate'"
-	cd /Users/hayde/Desktop/Code/CMake/GoogleTest-Example/build/_deps/googletest-src && /opt/homebrew/Cellar/cmake/3.26.1/bin/cmake -P /Users/hayde/Desktop/Code/CMake/GoogleTest-Example/build/_deps/googletest-subbuild/googletest-populate-prefix/tmp/googletest-populate-gitupdate.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/hayde/Desktop/Code/CMake/GoogleTest-Example/build/_deps/googletest-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "No update step for 'googletest-populate'"
+	/opt/homebrew/Cellar/cmake/3.26.1/bin/cmake -E echo_append
+	/opt/homebrew/Cellar/cmake/3.26.1/bin/cmake -E touch /Users/hayde/Desktop/Code/CMake/GoogleTest-Example/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update
 
 googletest-populate: CMakeFiles/googletest-populate
 googletest-populate: CMakeFiles/googletest-populate-complete

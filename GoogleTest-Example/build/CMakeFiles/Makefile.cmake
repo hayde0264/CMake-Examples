@@ -41,7 +41,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/homebrew/Cellar/cmake/3.26.1/share/cmake/Modules/Compiler/GNU.cmake"
   "/opt/homebrew/Cellar/cmake/3.26.1/share/cmake/Modules/FetchContent.cmake"
   "/opt/homebrew/Cellar/cmake/3.26.1/share/cmake/Modules/FetchContent/CMakeLists.cmake.in"
-  "/opt/homebrew/Cellar/cmake/3.26.1/share/cmake/Modules/FindGit.cmake"
   "/opt/homebrew/Cellar/cmake/3.26.1/share/cmake/Modules/FindPackageHandleStandardArgs.cmake"
   "/opt/homebrew/Cellar/cmake/3.26.1/share/cmake/Modules/FindPackageMessage.cmake"
   "/opt/homebrew/Cellar/cmake/3.26.1/share/cmake/Modules/FindPython.cmake"

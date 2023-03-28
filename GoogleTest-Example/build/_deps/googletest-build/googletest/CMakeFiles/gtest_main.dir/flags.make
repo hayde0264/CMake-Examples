@@ -6,7 +6,7 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -isystem /Users/hayde/Desktop/Code/CMake/GoogleTest-Example/build/_deps/googletest-src/googletest/include -isystem /Users/hayde/Desktop/Code/CMake/GoogleTest-Example/build/_deps/googletest-src/googletest
 
-CXX_FLAGSarm64 = -std=c++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk  -DGTEST_HAS_PTHREAD=1  
+CXX_FLAGSarm64 = -std=c++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk  -DGTEST_HAS_PTHREAD=1  
 
-CXX_FLAGS = -std=c++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk  -DGTEST_HAS_PTHREAD=1  
+CXX_FLAGS = -std=c++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk  -DGTEST_HAS_PTHREAD=1  
 

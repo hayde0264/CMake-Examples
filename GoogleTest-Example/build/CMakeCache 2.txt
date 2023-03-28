@@ -200,13 +200,13 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 CMAKE_PROJECT_NAME:STATIC=GoogleTest-Example
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION:STATIC=1.10.0
+CMAKE_PROJECT_VERSION:STATIC=1.13.0
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION_MAJOR:STATIC=1
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION_MINOR:STATIC=10
+CMAKE_PROJECT_VERSION_MINOR:STATIC=13
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION_PATCH:STATIC=0
@@ -316,9 +316,6 @@ GoogleTest-Example_SOURCE_DIR:STATIC=/Users/hayde/Desktop/Code/CMake/GoogleTest-
 // may want to turn this OFF.)
 INSTALL_GTEST:BOOL=ON
 
-//Path to a program.
-PYTHON_EXECUTABLE:FILEPATH=/opt/homebrew/bin/python3.11
-
 //Value Computed by CMake
 gmock_BINARY_DIR:STATIC=/Users/hayde/Desktop/Code/CMake/GoogleTest-Example/build/_deps/googletest-build/googlemock
 
@@ -366,7 +363,7 @@ gtest_disable_pthreads:BOOL=OFF
 
 //Use shared (DLL) run-time lib even when Google Test is built
 // as static lib.
-gtest_force_shared_crt:BOOL=ON
+gtest_force_shared_crt:BOOL=OFF
 
 //Build gtest with internal symbols hidden in shared libraries.
 gtest_hide_internal_symbols:BOOL=OFF
@@ -552,14 +549,10 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding Python
 FIND_PACKAGE_MESSAGE_DETAILS_Python:INTERNAL=[/opt/homebrew/Frameworks/Python.framework/Versions/3.11/bin/python3.11][cfound components: Interpreter ][v3.11.2()]
-//Details about finding PythonInterp
-FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/opt/homebrew/bin/python3.11][v3.11.2()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //ADVANCED property for variable: GIT_EXECUTABLE
 GIT_EXECUTABLE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: PYTHON_EXECUTABLE
-PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
 //Compiler reason failure

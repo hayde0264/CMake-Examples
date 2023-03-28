@@ -26,7 +26,7 @@ set(number_of_tries 0)
 while(error_code AND number_of_tries LESS 3)
   execute_process(
     COMMAND "/usr/bin/git" 
-            clone --no-checkout --config "advice.detachedHead=false" "https://github.com/google/googletest" "googletest-src"
+            clone --no-checkout --config "advice.detachedHead=false" "https://github.com/google/googletest.git" "googletest-src"
     WORKING_DIRECTORY "/Users/hayde/Desktop/Code/CMake/GoogleTest-Example/build/_deps"
     RESULT_VARIABLE error_code
   )
@@ -36,17 +36,17 @@ if(number_of_tries GREATER 1)
   message(STATUS "Had to git clone more than once: ${number_of_tries} times.")
 endif()
 if(error_code)
-  message(FATAL_ERROR "Failed to clone repository: 'https://github.com/google/googletest'")
+  message(FATAL_ERROR "Failed to clone repository: 'https://github.com/google/googletest.git'")
 endif()
 
 execute_process(
   COMMAND "/usr/bin/git" 
-          checkout "v1.12.0" --
+          checkout "703bd9caab50b139428cea1aaff9974ebee5742e" --
   WORKING_DIRECTORY "/Users/hayde/Desktop/Code/CMake/GoogleTest-Example/build/_deps/googletest-src"
   RESULT_VARIABLE error_code
 )
 if(error_code)
-  message(FATAL_ERROR "Failed to checkout tag: 'v1.12.0'")
+  message(FATAL_ERROR "Failed to checkout tag: '703bd9caab50b139428cea1aaff9974ebee5742e'")
 endif()
 
 set(init_submodules TRUE)
