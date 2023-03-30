@@ -5,7 +5,7 @@ cmake_minimum_required(VERSION 3.5)
 
 function(get_hash_for_ref ref out_var err_var)
   execute_process(
-    COMMAND "/opt/homebrew/bin/git" --git-dir=.git rev-parse "${ref}^0"
+    COMMAND "/usr/bin/git" --git-dir=.git rev-parse "${ref}^0"
     WORKING_DIRECTORY "/Users/hayde/Desktop/Code/CMake/Catch2-Example/build/_deps/catch2-src"
     RESULT_VARIABLE error_code
     OUTPUT_VARIABLE ref_hash
@@ -27,7 +27,7 @@ endif()
 
 
 execute_process(
-  COMMAND "/opt/homebrew/bin/git" --git-dir=.git show-ref "v2.13.7"
+  COMMAND "/usr/bin/git" --git-dir=.git show-ref "v3.0.1"
   WORKING_DIRECTORY "/Users/hayde/Desktop/Code/CMake/Catch2-Example/build/_deps/catch2-src"
   OUTPUT_VARIABLE show_ref_output
 )
@@ -35,19 +35,19 @@ if(show_ref_output MATCHES "^[a-z0-9]+[ \\t]+refs/remotes/")
   # Given a full remote/branch-name and we know about it already. Since
   # branches can move around, we always have to fetch.
   set(fetch_required YES)
-  set(checkout_name "v2.13.7")
+  set(checkout_name "v3.0.1")
 
 elseif(show_ref_output MATCHES "^[a-z0-9]+[ \\t]+refs/tags/")
   # Given a tag name that we already know about. We don't know if the tag we
   # have matches the remote though (tags can move), so we should fetch.
   set(fetch_required YES)
-  set(checkout_name "v2.13.7")
+  set(checkout_name "v3.0.1")
 
   # Special case to preserve backward compatibility: if we are already at the
   # same commit as the tag we hold locally, don't do a fetch and assume the tag
   # hasn't moved on the remote.
   # FIXME: We should provide an option to always fetch for this case
-  get_hash_for_ref("v2.13.7" tag_sha error_msg)
+  get_hash_for_ref("v3.0.1" tag_sha error_msg)
   if(tag_sha STREQUAL head_sha)
     message(VERBOSE "Already at requested tag: ${tag_sha}")
     return()
@@ -59,10 +59,10 @@ elseif(show_ref_output MATCHES "^[a-z0-9]+[ \\t]+refs/heads/")
   # different branch. It isn't safe to use a bare branch name without the
   # remote, so do a fetch and replace the ref with one that includes the remote.
   set(fetch_required YES)
-  set(checkout_name "origin/v2.13.7")
+  set(checkout_name "origin/v3.0.1")
 
 else()
-  get_hash_for_ref("v2.13.7" tag_sha error_msg)
+  get_hash_for_ref("v3.0.1" tag_sha error_msg)
   if(tag_sha STREQUAL head_sha)
     # Have the right commit checked out already
     message(VERBOSE "Already at requested ref: ${tag_sha}")
@@ -74,7 +74,7 @@ else()
     # because it can be confusing for users to see a failed git command.
     # That failure is being handled here, so it isn't an error.
     set(fetch_required YES)
-    set(checkout_name "v2.13.7")
+    set(checkout_name "v3.0.1")
     if(NOT error_msg STREQUAL "")
       message(VERBOSE "${error_msg}")
     endif()
@@ -84,7 +84,7 @@ else()
     # (otherwise it would have been handled further above), but we don't
     # have that commit checked out yet
     set(fetch_required NO)
-    set(checkout_name "v2.13.7")
+    set(checkout_name "v3.0.1")
     if(NOT error_msg STREQUAL "")
       message(WARNING "${error_msg}")
     endif()
@@ -95,7 +95,7 @@ endif()
 if(fetch_required)
   message(VERBOSE "Fetching latest from the remote origin")
   execute_process(
-    COMMAND "/opt/homebrew/bin/git" --git-dir=.git fetch --tags --force "origin"
+    COMMAND "/usr/bin/git" --git-dir=.git fetch --tags --force "origin"
     WORKING_DIRECTORY "/Users/hayde/Desktop/Code/CMake/Catch2-Example/build/_deps/catch2-src"
     COMMAND_ERROR_IS_FATAL ANY
   )
@@ -112,7 +112,7 @@ if(git_update_strategy MATCHES "^REBASE(_CHECKOUT)?$")
   # We can't if we aren't already on a branch and we shouldn't if that local
   # branch isn't tracking the one we want to checkout.
   execute_process(
-    COMMAND "/opt/homebrew/bin/git" --git-dir=.git symbolic-ref -q HEAD
+    COMMAND "/usr/bin/git" --git-dir=.git symbolic-ref -q HEAD
     WORKING_DIRECTORY "/Users/hayde/Desktop/Code/CMake/Catch2-Example/build/_deps/catch2-src"
     OUTPUT_VARIABLE current_branch
     OUTPUT_STRIP_TRAILING_WHITESPACE
@@ -128,7 +128,7 @@ if(git_update_strategy MATCHES "^REBASE(_CHECKOUT)?$")
 
   else()
     execute_process(
-      COMMAND "/opt/homebrew/bin/git" --git-dir=.git for-each-ref "--format=%(upstream:short)" "${current_branch}"
+      COMMAND "/usr/bin/git" --git-dir=.git for-each-ref "--format=%(upstream:short)" "${current_branch}"
       WORKING_DIRECTORY "/Users/hayde/Desktop/Code/CMake/Catch2-Example/build/_deps/catch2-src"
       OUTPUT_VARIABLE upstream_branch
       OUTPUT_STRIP_TRAILING_WHITESPACE
@@ -151,7 +151,7 @@ endif()
 
 # Check if stash is needed
 execute_process(
-  COMMAND "/opt/homebrew/bin/git" --git-dir=.git status --porcelain
+  COMMAND "/usr/bin/git" --git-dir=.git status --porcelain
   WORKING_DIRECTORY "/Users/hayde/Desktop/Code/CMake/Catch2-Example/build/_deps/catch2-src"
   RESULT_VARIABLE error_code
   OUTPUT_VARIABLE repo_status
@@ -165,7 +165,7 @@ string(LENGTH "${repo_status}" need_stash)
 # rebase or checkout without losing those changes permanently
 if(need_stash)
   execute_process(
-    COMMAND "/opt/homebrew/bin/git" --git-dir=.git stash save --quiet;--include-untracked
+    COMMAND "/usr/bin/git" --git-dir=.git stash save --quiet;--include-untracked
     WORKING_DIRECTORY "/Users/hayde/Desktop/Code/CMake/Catch2-Example/build/_deps/catch2-src"
     COMMAND_ERROR_IS_FATAL ANY
   )
@@ -173,13 +173,13 @@ endif()
 
 if(git_update_strategy STREQUAL "CHECKOUT")
   execute_process(
-    COMMAND "/opt/homebrew/bin/git" --git-dir=.git checkout "${checkout_name}"
+    COMMAND "/usr/bin/git" --git-dir=.git checkout "${checkout_name}"
     WORKING_DIRECTORY "/Users/hayde/Desktop/Code/CMake/Catch2-Example/build/_deps/catch2-src"
     COMMAND_ERROR_IS_FATAL ANY
   )
 else()
   execute_process(
-    COMMAND "/opt/homebrew/bin/git" --git-dir=.git rebase "${checkout_name}"
+    COMMAND "/usr/bin/git" --git-dir=.git rebase "${checkout_name}"
     WORKING_DIRECTORY "/Users/hayde/Desktop/Code/CMake/Catch2-Example/build/_deps/catch2-src"
     RESULT_VARIABLE error_code
     OUTPUT_VARIABLE rebase_output
@@ -188,7 +188,7 @@ else()
   if(error_code)
     # Rebase failed, undo the rebase attempt before continuing
     execute_process(
-      COMMAND "/opt/homebrew/bin/git" --git-dir=.git rebase --abort
+      COMMAND "/usr/bin/git" --git-dir=.git rebase --abort
       WORKING_DIRECTORY "/Users/hayde/Desktop/Code/CMake/Catch2-Example/build/_deps/catch2-src"
     )
 
@@ -196,7 +196,7 @@ else()
       # Not allowed to do a checkout as a fallback, so cannot proceed
       if(need_stash)
         execute_process(
-          COMMAND "/opt/homebrew/bin/git" --git-dir=.git stash pop --index --quiet
+          COMMAND "/usr/bin/git" --git-dir=.git stash pop --index --quiet
           WORKING_DIRECTORY "/Users/hayde/Desktop/Code/CMake/Catch2-Example/build/_deps/catch2-src"
           )
       endif()
@@ -218,7 +218,7 @@ else()
     message(WARNING "Rebase failed, output has been saved to ${error_log_file}"
                     "\nFalling back to checkout, previous commit tagged as ${tag_name}")
     execute_process(
-      COMMAND "/opt/homebrew/bin/git" --git-dir=.git tag -a
+      COMMAND "/usr/bin/git" --git-dir=.git tag -a
               -m "ExternalProject attempting to move from here to ${checkout_name}"
               ${tag_name}
       WORKING_DIRECTORY "/Users/hayde/Desktop/Code/CMake/Catch2-Example/build/_deps/catch2-src"
@@ -226,7 +226,7 @@ else()
     )
 
     execute_process(
-      COMMAND "/opt/homebrew/bin/git" --git-dir=.git checkout "${checkout_name}"
+      COMMAND "/usr/bin/git" --git-dir=.git checkout "${checkout_name}"
       WORKING_DIRECTORY "/Users/hayde/Desktop/Code/CMake/Catch2-Example/build/_deps/catch2-src"
       COMMAND_ERROR_IS_FATAL ANY
     )
@@ -236,29 +236,29 @@ endif()
 if(need_stash)
   # Put back the stashed changes
   execute_process(
-    COMMAND "/opt/homebrew/bin/git" --git-dir=.git stash pop --index --quiet
+    COMMAND "/usr/bin/git" --git-dir=.git stash pop --index --quiet
     WORKING_DIRECTORY "/Users/hayde/Desktop/Code/CMake/Catch2-Example/build/_deps/catch2-src"
     RESULT_VARIABLE error_code
     )
   if(error_code)
     # Stash pop --index failed: Try again dropping the index
     execute_process(
-      COMMAND "/opt/homebrew/bin/git" --git-dir=.git reset --hard --quiet
+      COMMAND "/usr/bin/git" --git-dir=.git reset --hard --quiet
       WORKING_DIRECTORY "/Users/hayde/Desktop/Code/CMake/Catch2-Example/build/_deps/catch2-src"
     )
     execute_process(
-      COMMAND "/opt/homebrew/bin/git" --git-dir=.git stash pop --quiet
+      COMMAND "/usr/bin/git" --git-dir=.git stash pop --quiet
       WORKING_DIRECTORY "/Users/hayde/Desktop/Code/CMake/Catch2-Example/build/_deps/catch2-src"
       RESULT_VARIABLE error_code
     )
     if(error_code)
       # Stash pop failed: Restore previous state.
       execute_process(
-        COMMAND "/opt/homebrew/bin/git" --git-dir=.git reset --hard --quiet ${head_sha}
+        COMMAND "/usr/bin/git" --git-dir=.git reset --hard --quiet ${head_sha}
         WORKING_DIRECTORY "/Users/hayde/Desktop/Code/CMake/Catch2-Example/build/_deps/catch2-src"
       )
       execute_process(
-        COMMAND "/opt/homebrew/bin/git" --git-dir=.git stash pop --index --quiet
+        COMMAND "/usr/bin/git" --git-dir=.git stash pop --index --quiet
         WORKING_DIRECTORY "/Users/hayde/Desktop/Code/CMake/Catch2-Example/build/_deps/catch2-src"
       )
       message(FATAL_ERROR "\nFailed to unstash changes in: '/Users/hayde/Desktop/Code/CMake/Catch2-Example/build/_deps/catch2-src'."
@@ -270,7 +270,7 @@ endif()
 set(init_submodules "TRUE")
 if(init_submodules)
   execute_process(
-    COMMAND "/opt/homebrew/bin/git" --git-dir=.git submodule update --recursive --init 
+    COMMAND "/usr/bin/git" --git-dir=.git submodule update --recursive --init 
     WORKING_DIRECTORY "/Users/hayde/Desktop/Code/CMake/Catch2-Example/build/_deps/catch2-src"
     COMMAND_ERROR_IS_FATAL ANY
   )

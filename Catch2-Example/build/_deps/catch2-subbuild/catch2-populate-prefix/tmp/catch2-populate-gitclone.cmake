@@ -25,7 +25,7 @@ set(error_code 1)
 set(number_of_tries 0)
 while(error_code AND number_of_tries LESS 3)
   execute_process(
-    COMMAND "/opt/homebrew/bin/git" 
+    COMMAND "/usr/bin/git" 
             clone --no-checkout --config "advice.detachedHead=false" "https://github.com/catchorg/Catch2.git" "catch2-src"
     WORKING_DIRECTORY "/Users/hayde/Desktop/Code/CMake/Catch2-Example/build/_deps"
     RESULT_VARIABLE error_code
@@ -40,19 +40,19 @@ if(error_code)
 endif()
 
 execute_process(
-  COMMAND "/opt/homebrew/bin/git" 
-          checkout "v2.13.7" --
+  COMMAND "/usr/bin/git" 
+          checkout "v3.0.1" --
   WORKING_DIRECTORY "/Users/hayde/Desktop/Code/CMake/Catch2-Example/build/_deps/catch2-src"
   RESULT_VARIABLE error_code
 )
 if(error_code)
-  message(FATAL_ERROR "Failed to checkout tag: 'v2.13.7'")
+  message(FATAL_ERROR "Failed to checkout tag: 'v3.0.1'")
 endif()
 
 set(init_submodules TRUE)
 if(init_submodules)
   execute_process(
-    COMMAND "/opt/homebrew/bin/git" 
+    COMMAND "/usr/bin/git" 
             submodule update --recursive --init 
     WORKING_DIRECTORY "/Users/hayde/Desktop/Code/CMake/Catch2-Example/build/_deps/catch2-src"
     RESULT_VARIABLE error_code
