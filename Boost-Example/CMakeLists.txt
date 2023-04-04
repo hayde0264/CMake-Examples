@@ -6,10 +6,11 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(BOOST_INCLUDE_LIBRARIES thread filesystem system program_options)
 set(BOOST_ENABLE_CMAKE ON)
 
-include(FetchContent)
+Include(FetchContent)
 FetchContent_Declare(
-  Boost
-  URL https://github.com/boostorg/boost/releases/tag/boost-1.81.0
+  Boost 
+  GIT_REPOSITORY https://github.com/boostorg/boost 
+  GIT_TAG boost-1.81.0 
 )
 FetchContent_MakeAvailable(Boost)
 
