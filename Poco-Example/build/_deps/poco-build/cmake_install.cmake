@@ -34,7 +34,7 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/objdump")
+  set(CMAKE_OBJDUMP "/Library/Developer/CommandLineTools/usr/bin/objdump")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Devel" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -54,6 +54,9 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/Users/hayde/Desktop/Code/CMake/Poco-Example/build/_deps/poco-build/Net/cmake_install.cmake")
   include("/Users/hayde/Desktop/Code/CMake/Poco-Example/build/_deps/poco-build/MongoDB/cmake_install.cmake")
   include("/Users/hayde/Desktop/Code/CMake/Poco-Example/build/_deps/poco-build/Redis/cmake_install.cmake")
+  include("/Users/hayde/Desktop/Code/CMake/Poco-Example/build/_deps/poco-build/JWT/cmake_install.cmake")
+  include("/Users/hayde/Desktop/Code/CMake/Poco-Example/build/_deps/poco-build/NetSSL_OpenSSL/cmake_install.cmake")
+  include("/Users/hayde/Desktop/Code/CMake/Poco-Example/build/_deps/poco-build/Crypto/cmake_install.cmake")
   include("/Users/hayde/Desktop/Code/CMake/Poco-Example/build/_deps/poco-build/Data/cmake_install.cmake")
   include("/Users/hayde/Desktop/Code/CMake/Poco-Example/build/_deps/poco-build/ActiveRecord/cmake_install.cmake")
   include("/Users/hayde/Desktop/Code/CMake/Poco-Example/build/_deps/poco-build/ActiveRecord/Compiler/cmake_install.cmake")

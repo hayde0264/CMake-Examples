@@ -43,11 +43,8 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   )
 
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/hayde/Desktop/Code/CMake/Poco-Example/build/_deps/poco-build/XML/CMakeFiles/XML.dir/DependInfo.cmake"
-  "/Users/hayde/Desktop/Code/CMake/Poco-Example/build/_deps/poco-build/JSON/CMakeFiles/JSON.dir/DependInfo.cmake"
-  "/Users/hayde/Desktop/Code/CMake/Poco-Example/build/_deps/poco-build/Foundation/CMakeFiles/Foundation.dir/DependInfo.cmake"
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

@@ -3,7 +3,7 @@ project(Boost-Example)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
-set(BOOST_INCLUDE_LIBRARIES thread filesystem system program_options)
+set(BOOST_INCLUDE_LIBRARIES filesystem)
 set(BOOST_ENABLE_CMAKE ON)
 
 Include(FetchContent)
@@ -17,5 +17,4 @@ FetchContent_MakeAvailable(Boost)
 add_executable(Boost-Example main.cpp)
 target_link_libraries(Boost-Example PRIVATE 
 	Boost::filesystem
-        Boost::program_options 
 )

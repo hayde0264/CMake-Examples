@@ -3,7 +3,7 @@
 # No other meaning or use of this file is supported.
 
 method=git
-command=/opt/homebrew/Cellar/cmake/3.25.2/bin/cmake;-P;/Users/hayde/Desktop/Code/CMake/Poco-Example/build/_deps/poco-subbuild/poco-populate-prefix/tmp/poco-populate-gitclone.cmake
+command=/opt/homebrew/Cellar/cmake/3.26.1/bin/cmake;-P;/Users/hayde/Desktop/Code/CMake/Poco-Example/build/_deps/poco-subbuild/poco-populate-prefix/tmp/poco-populate-gitclone.cmake
 source_dir=/Users/hayde/Desktop/Code/CMake/Poco-Example/build/_deps/poco-src
 work_dir=/Users/hayde/Desktop/Code/CMake/Poco-Example/build/_deps
 repository=https://github.com/pocoproject/poco

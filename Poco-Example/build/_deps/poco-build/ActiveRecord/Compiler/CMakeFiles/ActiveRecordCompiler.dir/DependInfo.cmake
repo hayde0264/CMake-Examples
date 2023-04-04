@@ -15,12 +15,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/hayde/Desktop/Code/CMake/Poco-Example/build/_deps/poco-src/ActiveRecord/Compiler/src/Parser.cpp" "_deps/poco-build/ActiveRecord/Compiler/CMakeFiles/ActiveRecordCompiler.dir/src/Parser.cpp.o" "gcc" "_deps/poco-build/ActiveRecord/Compiler/CMakeFiles/ActiveRecordCompiler.dir/src/Parser.cpp.o.d"
   )
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/hayde/Desktop/Code/CMake/Poco-Example/build/_deps/poco-build/Util/CMakeFiles/Util.dir/DependInfo.cmake"
-  "/Users/hayde/Desktop/Code/CMake/Poco-Example/build/_deps/poco-build/XML/CMakeFiles/XML.dir/DependInfo.cmake"
-  "/Users/hayde/Desktop/Code/CMake/Poco-Example/build/_deps/poco-build/JSON/CMakeFiles/JSON.dir/DependInfo.cmake"
-  "/Users/hayde/Desktop/Code/CMake/Poco-Example/build/_deps/poco-build/Foundation/CMakeFiles/Foundation.dir/DependInfo.cmake"
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

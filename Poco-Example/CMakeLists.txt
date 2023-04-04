@@ -14,5 +14,5 @@ FetchContent_MakeAvailable(poco)
 
 add_executable(Poco-Example main.cpp)
 target_link_libraries(Poco-Example PUBLIC
-	poco 
+	Poco::Data 
 )

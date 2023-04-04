@@ -8,7 +8,7 @@ FOREACH(file ${files})
   MESSAGE(STATUS "Uninstalling \"$ENV{DESTDIR}${file}\"")
   IF(EXISTS "$ENV{DESTDIR}${file}")
     EXEC_PROGRAM(
-      "/opt/homebrew/Cellar/cmake/3.25.2/bin/cmake" ARGS "-E remove \"$ENV{DESTDIR}${file}\""
+      "/opt/homebrew/Cellar/cmake/3.26.1/bin/cmake" ARGS "-E remove \"$ENV{DESTDIR}${file}\""
       OUTPUT_VARIABLE rm_out
       RETURN_VALUE rm_retval
       )
