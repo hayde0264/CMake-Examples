@@ -574,6 +574,8 @@ _Python_EXECUTABLE:INTERNAL=/opt/homebrew/Frameworks/Python.framework/Versions/3
 //Python Properties
 _Python_INTERPRETER_PROPERTIES:INTERNAL=Python;3;11;2;64;;cpython-311-darwin;abi3;/opt/homebrew/opt/python@3.11/Frameworks/Python.framework/Versions/3.11/lib/python3.11;/opt/homebrew/opt/python@3.11/Frameworks/Python.framework/Versions/3.11/lib/python3.11;/opt/homebrew/opt/python@3.11/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages;/opt/homebrew/opt/python@3.11/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages
 _Python_INTERPRETER_SIGNATURE:INTERNAL=91fa6b41055f536ea0963b4ef9ef5b99
+//Interpreter reason failure
+_Python_Interpreter_REASON_FAILURE:INTERNAL=
 //NumPy reason failure
 _Python_NumPy_REASON_FAILURE:INTERNAL=
 cmake_package_name:INTERNAL=GTest

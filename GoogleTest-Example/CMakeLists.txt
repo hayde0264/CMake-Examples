@@ -14,4 +14,4 @@ FetchContent_MakeAvailable(googletest)
 # Now simply link against gtest or gtest_main as needed. Eg
 add_executable(GoogleTest-Example main.cpp)
 target_link_libraries(GoogleTest-Example gtest_main)
-add_test(NAME GoogleTest-Example COMMAND example)
+add_test(NAME GoogleTest-Example COMMAND test)

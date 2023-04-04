@@ -41,12 +41,12 @@ endif()
 
 execute_process(
   COMMAND "/usr/bin/git" 
-          checkout "v3.0.1" --
+          checkout "v2.13.7" --
   WORKING_DIRECTORY "/Users/hayde/Desktop/Code/CMake/Catch2-Example/build/_deps/catch2-src"
   RESULT_VARIABLE error_code
 )
 if(error_code)
-  message(FATAL_ERROR "Failed to checkout tag: 'v3.0.1'")
+  message(FATAL_ERROR "Failed to checkout tag: 'v2.13.7'")
 endif()
 
 set(init_submodules TRUE)

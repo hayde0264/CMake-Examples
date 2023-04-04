@@ -73,15 +73,15 @@ CMakeFiles/Catch2-Example.dir/main.cpp.o: CMakeFiles/Catch2-Example.dir/flags.ma
 CMakeFiles/Catch2-Example.dir/main.cpp.o: /Users/hayde/Desktop/Code/CMake/Catch2-Example/main.cpp
 CMakeFiles/Catch2-Example.dir/main.cpp.o: CMakeFiles/Catch2-Example.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hayde/Desktop/Code/CMake/Catch2-Example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Catch2-Example.dir/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Catch2-Example.dir/main.cpp.o -MF CMakeFiles/Catch2-Example.dir/main.cpp.o.d -o CMakeFiles/Catch2-Example.dir/main.cpp.o -c /Users/hayde/Desktop/Code/CMake/Catch2-Example/main.cpp
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Catch2-Example.dir/main.cpp.o -MF CMakeFiles/Catch2-Example.dir/main.cpp.o.d -o CMakeFiles/Catch2-Example.dir/main.cpp.o -c /Users/hayde/Desktop/Code/CMake/Catch2-Example/main.cpp
 
 CMakeFiles/Catch2-Example.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Catch2-Example.dir/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hayde/Desktop/Code/CMake/Catch2-Example/main.cpp > CMakeFiles/Catch2-Example.dir/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hayde/Desktop/Code/CMake/Catch2-Example/main.cpp > CMakeFiles/Catch2-Example.dir/main.cpp.i
 
 CMakeFiles/Catch2-Example.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Catch2-Example.dir/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hayde/Desktop/Code/CMake/Catch2-Example/main.cpp -o CMakeFiles/Catch2-Example.dir/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hayde/Desktop/Code/CMake/Catch2-Example/main.cpp -o CMakeFiles/Catch2-Example.dir/main.cpp.s
 
 # Object files for target Catch2-Example
 Catch2__Example_OBJECTS = \
@@ -92,8 +92,6 @@ Catch2__Example_EXTERNAL_OBJECTS =
 
 Catch2-Example: CMakeFiles/Catch2-Example.dir/main.cpp.o
 Catch2-Example: CMakeFiles/Catch2-Example.dir/build.make
-Catch2-Example: _deps/catch2-build/src/libCatch2Main.a
-Catch2-Example: _deps/catch2-build/src/libCatch2.a
 Catch2-Example: CMakeFiles/Catch2-Example.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/hayde/Desktop/Code/CMake/Catch2-Example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Catch2-Example"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Catch2-Example.dir/link.txt --verbose=$(VERBOSE)

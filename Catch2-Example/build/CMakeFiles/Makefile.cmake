@@ -11,24 +11,15 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.26.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.26.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.26.1/CMakeSystem.cmake"
-  "_deps/catch2-src/CMake/CatchConfigOptions.cmake"
-  "_deps/catch2-src/CMake/CatchMiscFunctions.cmake"
   "_deps/catch2-src/CMakeLists.txt"
-  "_deps/catch2-src/src/CMakeLists.txt"
-  "_deps/catch2-src/src/catch2/catch_user_config.hpp.in"
   "/opt/homebrew/Cellar/cmake/3.26.1/share/cmake/Modules/CMakeCInformation.cmake"
   "/opt/homebrew/Cellar/cmake/3.26.1/share/cmake/Modules/CMakeCXXInformation.cmake"
-  "/opt/homebrew/Cellar/cmake/3.26.1/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
   "/opt/homebrew/Cellar/cmake/3.26.1/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"
-  "/opt/homebrew/Cellar/cmake/3.26.1/share/cmake/Modules/CMakeDependentOption.cmake"
   "/opt/homebrew/Cellar/cmake/3.26.1/share/cmake/Modules/CMakeGenericSystem.cmake"
   "/opt/homebrew/Cellar/cmake/3.26.1/share/cmake/Modules/CMakeInitializeConfigs.cmake"
   "/opt/homebrew/Cellar/cmake/3.26.1/share/cmake/Modules/CMakeLanguageInformation.cmake"
-  "/opt/homebrew/Cellar/cmake/3.26.1/share/cmake/Modules/CMakePackageConfigHelpers.cmake"
   "/opt/homebrew/Cellar/cmake/3.26.1/share/cmake/Modules/CMakeSystemSpecificInformation.cmake"
   "/opt/homebrew/Cellar/cmake/3.26.1/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake"
-  "/opt/homebrew/Cellar/cmake/3.26.1/share/cmake/Modules/CheckCXXCompilerFlag.cmake"
-  "/opt/homebrew/Cellar/cmake/3.26.1/share/cmake/Modules/CheckCXXSourceCompiles.cmake"
   "/opt/homebrew/Cellar/cmake/3.26.1/share/cmake/Modules/Compiler/AppleClang-C.cmake"
   "/opt/homebrew/Cellar/cmake/3.26.1/share/cmake/Modules/Compiler/AppleClang-CXX.cmake"
   "/opt/homebrew/Cellar/cmake/3.26.1/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
@@ -40,9 +31,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/homebrew/Cellar/cmake/3.26.1/share/cmake/Modules/FindPackageHandleStandardArgs.cmake"
   "/opt/homebrew/Cellar/cmake/3.26.1/share/cmake/Modules/FindPackageMessage.cmake"
   "/opt/homebrew/Cellar/cmake/3.26.1/share/cmake/Modules/GNUInstallDirs.cmake"
-  "/opt/homebrew/Cellar/cmake/3.26.1/share/cmake/Modules/Internal/CheckCompilerFlag.cmake"
-  "/opt/homebrew/Cellar/cmake/3.26.1/share/cmake/Modules/Internal/CheckFlagCommonConfig.cmake"
-  "/opt/homebrew/Cellar/cmake/3.26.1/share/cmake/Modules/Internal/CheckSourceCompiles.cmake"
   "/opt/homebrew/Cellar/cmake/3.26.1/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake"
   "/opt/homebrew/Cellar/cmake/3.26.1/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake"
   "/opt/homebrew/Cellar/cmake/3.26.1/share/cmake/Modules/Platform/Apple-Clang-C.cmake"
@@ -51,7 +39,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/homebrew/Cellar/cmake/3.26.1/share/cmake/Modules/Platform/Darwin-Initialize.cmake"
   "/opt/homebrew/Cellar/cmake/3.26.1/share/cmake/Modules/Platform/Darwin.cmake"
   "/opt/homebrew/Cellar/cmake/3.26.1/share/cmake/Modules/Platform/UnixPaths.cmake"
-  "/opt/homebrew/Cellar/cmake/3.26.1/share/cmake/Modules/WriteBasicConfigVersionFile.cmake"
   )
 
 # The corresponding makefile is:
@@ -65,13 +52,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "_deps/catch2-subbuild/CMakeLists.txt"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "_deps/catch2-build/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "generated-includes/catch2/catch_user_config.hpp"
-  "_deps/catch2-build/src/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Catch2-Example.dir/DependInfo.cmake"
-  "_deps/catch2-build/src/CMakeFiles/Catch2.dir/DependInfo.cmake"
-  "_deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/DependInfo.cmake"
   )

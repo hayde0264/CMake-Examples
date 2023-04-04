@@ -13,15 +13,15 @@ project(catch2-populate NONE)
 # Pass through things we've already detected in the main project to avoid
 # paying the cost of redetecting them again in ExternalProject_Add()
 set(GIT_EXECUTABLE [==[/usr/bin/git]==])
-set(GIT_VERSION_STRING [==[2.37.1 (Apple Git-137.1)]==])
+set(GIT_VERSION_STRING [==[2.39.2 (Apple Git-143)]==])
 set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
-  [==[/usr/bin/git;2.37.1 (Apple Git-137.1)]==]
+  [==[/usr/bin/git;2.39.2 (Apple Git-143)]==]
 )
 
 
 include(ExternalProject)
 ExternalProject_Add(catch2-populate
-                     "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/catchorg/Catch2.git" "GIT_TAG" "v3.0.1"
+                     "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/catchorg/Catch2.git" "GIT_TAG" "v2.13.7"
                     SOURCE_DIR          "/Users/hayde/Desktop/Code/CMake/Catch2-Example/build/_deps/catch2-src"
                     BINARY_DIR          "/Users/hayde/Desktop/Code/CMake/Catch2-Example/build/_deps/catch2-build"
                     CONFIGURE_COMMAND   ""
