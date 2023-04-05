@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/hayde/Desktop/Code/CMake/json-example/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DJSON_DIAGNOSTICS=0 -DJSON_USE_IMPLICIT_CONVERSIONS=1 -I/Users/hayde/Desktop/Code/CMake/json-example/build/_deps/json-src/single_include -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/json-example.dir/main.cpp.o -c /Users/hayde/Desktop/Code/CMake/json-example/main.cpp",
+  "file": "/Users/hayde/Desktop/Code/CMake/json-example/main.cpp",
+  "output": "CMakeFiles/json-example.dir/main.cpp.o"
+}
+]

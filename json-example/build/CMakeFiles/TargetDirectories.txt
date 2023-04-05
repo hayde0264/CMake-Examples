@@ -1,0 +1,5 @@
+/Users/hayde/Desktop/Code/CMake/json-example/build/CMakeFiles/json-example.dir
+/Users/hayde/Desktop/Code/CMake/json-example/build/CMakeFiles/edit_cache.dir
+/Users/hayde/Desktop/Code/CMake/json-example/build/CMakeFiles/rebuild_cache.dir
+/Users/hayde/Desktop/Code/CMake/json-example/build/_deps/json-build/CMakeFiles/edit_cache.dir
+/Users/hayde/Desktop/Code/CMake/json-example/build/_deps/json-build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/Users/hayde/Desktop/Code/play/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DFMT_LOCALE -I/Users/hayde/Desktop/Code/play/build/_deps/fmt-src/include -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/play.dir/main.cpp.o -c /Users/hayde/Desktop/Code/play/main.cpp",
+  "file": "/Users/hayde/Desktop/Code/play/main.cpp",
+  "output": "CMakeFiles/play.dir/main.cpp.o"
+},
+{
+  "directory": "/Users/hayde/Desktop/Code/play/build/_deps/fmt-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DFMT_LOCALE -I/Users/hayde/Desktop/Code/play/build/_deps/fmt-src/include -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/fmt.dir/src/format.cc.o -c /Users/hayde/Desktop/Code/play/build/_deps/fmt-src/src/format.cc",
+  "file": "/Users/hayde/Desktop/Code/play/build/_deps/fmt-src/src/format.cc",
+  "output": "_deps/fmt-build/CMakeFiles/fmt.dir/src/format.cc.o"
+},
+{
+  "directory": "/Users/hayde/Desktop/Code/play/build/_deps/fmt-build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DFMT_LOCALE -I/Users/hayde/Desktop/Code/play/build/_deps/fmt-src/include -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -o CMakeFiles/fmt.dir/src/os.cc.o -c /Users/hayde/Desktop/Code/play/build/_deps/fmt-src/src/os.cc",
+  "file": "/Users/hayde/Desktop/Code/play/build/_deps/fmt-src/src/os.cc",
+  "output": "_deps/fmt-build/CMakeFiles/fmt.dir/src/os.cc.o"
+}
+]
