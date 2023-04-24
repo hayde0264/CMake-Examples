@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.25)
-project(play) 
+project(wxWidgets-Example) 
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON) 
@@ -12,7 +12,7 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(wxwidgets)
 
-add_executable(play src/main.cpp)
+add_executable(wxWidgets-Example src/main.cpp)
 
-target_include_directories(play PRIVATE ${wxWidgets_SOURCE_DIR}/include)
-target_link_libraries(play PRIVATE wx::base wx::core)
+target_include_directories(wxWidgets-Example PRIVATE ${wxWidgets_SOURCE_DIR}/include)
+target_link_libraries(wxWidgets-Example PRIVATE wx::base wx::core)
