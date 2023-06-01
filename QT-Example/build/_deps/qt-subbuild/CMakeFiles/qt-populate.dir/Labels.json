@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/hayde/Desktop/Code/CMake/QT-Example/build/_deps/qt-subbuild/CMakeFiles/qt-populate"
+		},
+		{
+			"file" : "/Users/hayde/Desktop/Code/CMake/QT-Example/build/_deps/qt-subbuild/CMakeFiles/qt-populate.rule"
+		},
+		{
+			"file" : "/Users/hayde/Desktop/Code/CMake/QT-Example/build/_deps/qt-subbuild/CMakeFiles/qt-populate-complete.rule"
+		},
+		{
+			"file" : "/Users/hayde/Desktop/Code/CMake/QT-Example/build/_deps/qt-subbuild/qt-populate-prefix/src/qt-populate-stamp/qt-populate-build.rule"
+		},
+		{
+			"file" : "/Users/hayde/Desktop/Code/CMake/QT-Example/build/_deps/qt-subbuild/qt-populate-prefix/src/qt-populate-stamp/qt-populate-configure.rule"
+		},
+		{
+			"file" : "/Users/hayde/Desktop/Code/CMake/QT-Example/build/_deps/qt-subbuild/qt-populate-prefix/src/qt-populate-stamp/qt-populate-download.rule"
+		},
+		{
+			"file" : "/Users/hayde/Desktop/Code/CMake/QT-Example/build/_deps/qt-subbuild/qt-populate-prefix/src/qt-populate-stamp/qt-populate-install.rule"
+		},
+		{
+			"file" : "/Users/hayde/Desktop/Code/CMake/QT-Example/build/_deps/qt-subbuild/qt-populate-prefix/src/qt-populate-stamp/qt-populate-mkdir.rule"
+		},
+		{
+			"file" : "/Users/hayde/Desktop/Code/CMake/QT-Example/build/_deps/qt-subbuild/qt-populate-prefix/src/qt-populate-stamp/qt-populate-patch.rule"
+		},
+		{
+			"file" : "/Users/hayde/Desktop/Code/CMake/QT-Example/build/_deps/qt-subbuild/qt-populate-prefix/src/qt-populate-stamp/qt-populate-test.rule"
+		},
+		{
+			"file" : "/Users/hayde/Desktop/Code/CMake/QT-Example/build/_deps/qt-subbuild/qt-populate-prefix/src/qt-populate-stamp/qt-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"qt-populate"
+		],
+		"name" : "qt-populate"
+	}
+}
