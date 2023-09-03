@@ -7,8 +7,8 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 include(FetchContent)
 FetchContent_Declare( 
 	poco 
-	  GIT_REPOSITORY https://github.com/pocoproject/poco
-  GIT_TAG  poco-1.11.6-release
+	GIT_REPOSITORY https://github.com/pocoproject/poco
+  	GIT_TAG  poco-1.11.6-release
 )
 FetchContent_MakeAvailable(poco)
 
